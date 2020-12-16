@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Medarbejdere</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div th:replace="header">...</div>
+
+<body>
+<table class="tables" align="center">
+    <thead>
+    <tr>
+        <th>Navn</th>
+        <th>Jobtitel</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="staff: ${staffs}">
+        <td th:text="${staff.getName()}"></td>
+        <td th:text="${staff.getJobTitel()}"></td>
+        <td th:text="${staff.getEmail()}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

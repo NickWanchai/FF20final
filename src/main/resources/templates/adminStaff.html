@@ -1,0 +1,23 @@
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Adminstrer personale</title>
+</head>
+<div th:replace="header">...</div>
+<body>
+
+<h2>Adminstrer Personale </h2>
+<form method="get" action="/addStaff">
+    <button type="submit">Tilføj medarbejder</button>
+</form>
+<form method="get" action="/deleteStaff">
+    <button type="submit">Slet medarbejder</button>
+</form>
+<form method="get" action="/updateStaff">
+    <button type="submit">Opdater medarbejder information</button>
+</form>
+
+</body>
+</html>

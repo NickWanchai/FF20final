@@ -1,0 +1,25 @@
+
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:replace="header">...</div>
+
+<h2>Admin side</h2>
+
+<form method="GET" action="/adminPlayer">
+    <button type="submit">Adminstrer spillere</button>
+</form>
+<form method="get" action="/adminShop">
+    <button type="submit">Adminstrer shop</button>
+</form>
+<form method="get" action="/adminStaff">
+    <button type="submit">Adminstrer personale</button>
+</form>
+
+</body>
+</html>
