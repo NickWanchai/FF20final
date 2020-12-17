@@ -12,7 +12,7 @@
 
     <form action="#" th:action="@{/addPlayer}" th:object="${player}" method="post" align="center">
 
-        <p>Trøjenummer: <input type="number" th:field="*{id}"></p>
+        <p>Trøjenummer: <input type="number" th:field="*{shirtNumber}"></p>
         <p>Age: <input type="number" th:field="*{age}"></p>
         <p>Spiller Navn: <input type="text" th:field="*{name}" required></p>
         <p>Position: <input type="text" th:field="*{position}" required></p>

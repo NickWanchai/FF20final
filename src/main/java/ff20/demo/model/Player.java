@@ -11,6 +11,7 @@ public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private int shirtNumber;
     private int age;
     private String name;
     private String position;
@@ -20,20 +21,21 @@ public class Player {
     public Player() {
     }
 
-    public Player(long id, int age, String name, String position, String nationality) {
-        this.id = id;
+    public Player(int shirtNumber, int age, String name, String position, String nationality) {
+        this.shirtNumber = shirtNumber;
         this.age = age;
         this.name = name;
         this.position = position;
         this.nationality = nationality;
     }
 
-    public long getId() {
-        return id;
+
+    public int getShirtNumber() {
+        return shirtNumber;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setShirtNumber(int shirtNumber) {
+        this.shirtNumber = shirtNumber;
     }
 
     public int getAge() {
@@ -66,5 +68,13 @@ public class Player {
 
     public void setNationality(String nationality) {
         this.nationality = nationality;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

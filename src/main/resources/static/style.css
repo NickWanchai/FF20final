@@ -7,7 +7,7 @@
 
 .topnav {
     overflow: hidden;
-    background-color: darkred;
+    background-color: yellow;
 }
 
 /* Navbar links */
@@ -22,13 +22,13 @@
 
 /* Links - ændre farven når man holder over nav baren i toppen */
 .topnav a:hover {
-    background-color: darkred;
+    background-color: #80000b;
     color: black;
 }
 
 .bg1 {
-    background-color: darkred; /* så er baggrund rød bag billedet */
-    color: darkred;
+    background-color: rgb(172, 70, 70);
+
 }
 
 

@@ -34,13 +34,13 @@ public class PlayerController {
 
     @PostMapping("/addPlayer")
     public String addPlayer(HttpServletRequest request){
-        long id = Integer.parseInt(request.getParameter("id"));
+        int shirtNumber = Integer.parseInt(request.getParameter("shirtNumber"));
         int age = Integer.parseInt(request.getParameter("age"));
         String name = request.getParameter("name");
         String position = request.getParameter("position");
         String nationality = request.getParameter("nationality");
 
-        Player player= new Player(id, age, name, position, nationality);
+        Player player= new Player(shirtNumber, age, name, position, nationality);
         playerRepository.save(player);
 
         return "redirect:/players";
